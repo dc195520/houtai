@@ -1,0 +1,181 @@
+
+/* 顶部 */ 
+header{
+    width:100%;
+    height:50px; 
+    background:#c5b049;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;            
+    padding: 0 20px;
+    border-bottom:5px solid #b89917;
+    box-sizing: border-box;
+} 
+header a{ 
+    color:#fff;
+    font-size: 18px;
+}
+header a strong{
+    margin-right:5px;
+}
+.h_right{
+    margin-left:10px;
+    line-height: 50px;
+    padding:0 20px;
+}
+.h_right img{
+    vertical-align: middle;
+}
+
+/* ------内容部分 -----------*/
+.content{
+    width:100%;
+    box-sizing: border-box;
+}
+/*左边内容*/
+.con_left{
+    width:200px;
+    background:#393d49;
+    height:100%;   
+    position: fixed;
+    left:0;
+    top:50px;
+}
+.list{
+    width:100%;    
+}
+.list li{
+    width:100%;
+    min-height:50px;
+    /*注：不能给li设置固定高度，ul会撑开设置最小高度*/
+    box-sizing: border-box;
+    border-left:5px solid transparent;
+}
+.list li:hover{
+    border-left:5px solid #009688;    
+}
+.tit{
+    display: block;
+    width:160px;
+    height:50px;
+    color:#fff;
+    line-height: 50px;
+    margin-left:20px;
+}
+.tit .sj{
+    width:0;
+    height:0;
+    border:10px solid transparent;
+    border-top:10px solid #ddd;
+    float:right;
+    margin-top: 20px;
+}
+/*-------------------*/
+.list .list_2{
+    width:100%;
+    background:#333;
+}
+.list .list_2 li{
+    width:100%;
+    height:40px;
+    color:#fff; 
+}
+.list .list_2 li:hover{
+    background:#009688;
+}
+.list .list_2 li a{
+    color:#ddd;
+    line-height: 40px;
+    margin-left:20px;
+    display: block;
+    width: 150px;
+    height: 40px;
+}
+.list .list_2 li a:hover{
+    color:#fff;
+}
+
+/* 右边内容 */
+.con_right{
+   position: fixed;
+   top:50px;
+   left:200px;
+   width:85.67%;
+   height:92%;
+   /* 注：重要!重要!重要! 以上全部*/
+   /* 设计响应式 */
+}
+/* ------------改变------------------*/
+.con_1{
+    width:100%;
+} 
+.r_top{
+    width:100%;
+}
+.r_top h3{
+    margin-left:15px;
+    font-weight: bold;
+    color:#0e90d3;
+    padding:20px 0;
+    border-bottom:1px solid #69f65b;
+}
+.r_bot{
+    width:100%;
+    box-sizing: border-box;
+    padding:25px;
+}
+.r_list{
+
+}
+.r_list li{
+    width:14.67%;
+    padding:10px 0;
+    float:left;
+}
+.list_1{
+    width:100%;
+    height:100%;
+} 
+.list_1:hover p{
+    color:skyblue;
+}
+.list_1 img{
+    width: 85%;
+    height: 100%;
+    padding:2px;
+    border:1px solid #ddd;
+}
+.list_1 p{
+    margin-top:10px;
+    text-indent: 10px;
+    color:#666;
+}
+
+
+/* 媒体查询 */
+
+/* 第一个 */
+@media screen and (max-width:1250px){
+    .r_list li{
+        width:25%;       
+    }
+    .list_1 img{
+      width:95%;
+    }
+}
+@media screen and (max-width:1000px){
+    .r_list li{
+        width:50%;
+    }    
+    .list_1 img{
+      width:100%; 
+    }
+}
+@media screen and (max-width:800px){
+    .r_list li{
+        width:16%;
+    }    
+    .list_1 img{
+      width:84%; 
+    }
+}

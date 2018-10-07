@@ -1,0 +1,84 @@
+ 
+ body{
+     width:100%;
+     height:100%;
+ }
+.psd_t{
+    width:100%;
+    height:100%;
+}
+
+.opac{
+    width:100%;
+    height:100%;
+    background:#333;
+    z-index:1;
+}
+.show{
+    width:530px;
+    height: 380px;
+    /*background:skyblue;*/
+    border:1px solid skyblue;
+    position: absolute;
+    left:35%;
+    top:20%;
+    cursor: move;
+    box-sizing: border-box;
+    z-index:999;
+}
+.changePas{
+    width:100%;
+    height:46px;
+    background:#eff3f8;
+    padding:0 10px;
+    box-sizing: border-box;
+    line-height: 46px;
+    font-weight: bold;
+}
+.changePas span{
+    float:right;
+    width:8px;
+    height:8px;
+    cursor: pointer;
+}
+.changeCon{
+    width:100%;
+    height:335px;
+    padding-top:30px;
+    box-sizing: border-box;
+}
+.one{
+    width:100%;
+    height:85px;
+    display:flex;
+    box-sizing: border-box;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.one label{
+    font-size:16px;
+    color:#333;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.newPas input{
+    width:340px;
+    height:38px;
+    text-indent:10px;
+}
+.newPas small{
+    display:block;
+    color:#333;
+    margin-top:5px;
+}
+.btn_ch{
+    width:100px;
+    height:38px;
+    background:#5eb95e;
+    color:#fff;
+    text-align: center;
+    line-height: 38px;
+    border:0;
+    cursor: pointer;
+}
